@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header {
+  margin: 50px 150px;
+
+  .nav-bar {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+  }
+
+  .contact-button{
+    padding: 20px 40px;
+    background-color: #072AC8;
+    color: white;
+    border: none;
+  }
+}
+
+.hero{
+    display: flex;
+
+    .hero-image{
+        max-width: 500px;
+    }
+
+    .card-hero-image{
+        max-width: 200px;
+    }
+}
+
+.img-black-white{
+    filter: grayscale(100%)
+}
+
+.img-card{
+    max-width: 200px;
+}
+
+.footer{
+    display: flex;
+    justify-content:space-between;
+
+}
