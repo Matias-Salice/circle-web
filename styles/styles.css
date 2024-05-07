@@ -35,6 +35,14 @@ ul {
   list-style-type: none;
 }
 
+.headline {
+  font-size: 17px;
+}
+
+.caption {
+  font-size: 15px;
+}
+
 .header {
   margin: 50px 350px;
 
@@ -157,50 +165,199 @@ ul {
   }
 }
 
-.testimonial-section{
+.testimonial-section {
   position: relative;
-  background-color: #292E47;
-  margin: 100px;
-  
-  .testimonial-background{
-    width: 500px;
-    height: 500px;
+  background-color: #292e47;
+  margin: 100px auto;
+  width: 90%;
+  padding: 20px;
+  height: 600px;
+  background-image: url(../assets/testimonial-section/testimonial-section/orbit.png);
+  background-position: center;
+  background-size: cover;
+
+  h3 {
+    color: white;
   }
 
-  .memoji1{
-    width: 250px;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .memoji2{
-    width: 250px;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  .memoji3{
-    width: 250px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
-  .memoji4{
-    width: 250px;
-    position: absolute;
-    bottom: 0;
-    right: 0
+  .p-yellow {
+    font-size: 24px;
+    color: #ffc600;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5em;
   }
 
-  .user-profile{
+  .testimonial-contain {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+  }
+
+  .user-profile p {
+    margin: 5px;
+  }
+
+  .blue-color {
+    color: #a2d6f9;
+  }
+
+  .img-profile {
     width: 50px;
     height: 50px;
     border-radius: 100px;
   }
-  
+
+  .memoji1 {
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .memoji2 {
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .memoji3 {
+    width: 200px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+  }
+  .memoji4 {
+    width: 200px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+.services-section {
+  margin: 0px 350px;
+
+  .card-container {
+    background-color: white;
+    width: 250px;
+    padding: 40px 30px;
+  }
+
+  .image-service {
+    background: #f2f4fc;
+    border-radius: 50%;
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .service-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  h3 {
+    margin: 100px 0;
+  }
+
+  .service-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #292e47;
+    padding: 20px 0;
+  }
+
+  .service-info {
+    color: #6b708d;
+    line-height: 1.5em;
+    padding-bottom: 20px;
+  }
+
+  .card-container a {
+    text-decoration: none;
+    color: #072ac8;
+    font-weight: 500;
+  }
+}
+
+.contact-section {
+  margin: 200px auto;
+  padding: 100px;
+  background-color: #ffc600;
+  color: #292e47;
+  width: 80%;
+  text-align: center;
+
+  h2 {
+    margin: 30px;
+  }
+
+  p {
+    margin: 30px;
+    font-size: 20px;
+  }
+
+  .input-mail {
+    height: 60px;
+    width: 400px;
+    padding-left: 60px;
+    font-size: 17px;
+    color: #292e47;
+    margin-right: 20px;
+  }
+
+  .button-subscribe {
+    height: 63px;
+    width: 150px;
+    background-color: #072ac8;
+    color: white;
+    font-size: 17px;
+    border: none;
+  }
+
+  .icon-email {
+    position: relative;
+    top: 8px;
+    left: 50px;
+  }
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
+  padding: 0px 300px 100px 300px;
+
+  .logo-footer{
+    width: 100px;
+  }
+
+  p{
+    color: #6b708d;
+    font-size: 17px;
+  }
+
+  a{
+    font-size: 17px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #6b708d;
+  }
+
+  .footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
 }
