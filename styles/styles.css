@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+/* Global CSS */
+
 * {
   font-family: "Roboto";
 }
@@ -43,6 +45,8 @@ ul {
   font-size: 15px;
 }
 
+/* Header and Footer CSS */
+
 .header {
   margin: 50px 350px;
 
@@ -62,9 +66,44 @@ ul {
     align-items: center;
     font-weight: 500;
     color: #6b708d;
-    font-size: 17px;
+    font-size: 17px;  
+  }
+  .nav-links a{
+    text-decoration: none; 
+    color: #6b708d;
   }
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 150px 300px 100px 300px;
+
+  .logo-footer{
+    width: 100px;
+  }
+
+  p{
+    color: #6b708d;
+    font-size: 17px;
+  }
+
+  a{
+    font-size: 17px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #6b708d;
+  }
+
+  .footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+
+
+/* Home page CSS */
 
 .button-blue {
   padding: 15px 30px;
@@ -84,12 +123,12 @@ ul {
 
   .hero-left {
     text-align: left;
-    width: 50%;
+    max-width: 50%;
 
     .title {
       padding-top: 50px;
-      width: 600px;
-      color: #292e47;
+      max-width: 600px;
+      
     }
 
     p {
@@ -113,14 +152,14 @@ ul {
 
   .hero-right {
     position: relative;
-    width: 50%;
+    max-width: 50%;
 
     .hero-image {
-      width: 100%;
+      max-width: 100%;
     }
 
     .card-hero-image1 {
-      width: 35%;
+      max-width: 35%;
       border-radius: 50px;
       position: absolute;
       top: 0%;
@@ -128,7 +167,7 @@ ul {
     }
 
     .card-hero-image2 {
-      width: 35%;
+      max-width: 35%;
       border-radius: 50px;
       position: absolute;
       right: 0;
@@ -293,7 +332,7 @@ ul {
 }
 
 .contact-section {
-  margin: 200px auto;
+  margin: 100px 100px 50px 100px;
   padding: 100px;
   background-color: #ffc600;
   color: #292e47;
@@ -307,6 +346,12 @@ ul {
   p {
     margin: 30px;
     font-size: 20px;
+  }
+
+  .input-mail{
+    background-image: url(../assets/newsletter/newsletter/icon/mail.svg);
+    background-repeat: no-repeat;
+    background-position: 5%;
   }
 
   .input-mail {
@@ -327,37 +372,11 @@ ul {
     border: none;
   }
 
-  .icon-email {
-    position: relative;
-    top: 8px;
-    left: 50px;
-  }
+  
 }
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 300px 100px 300px;
 
-  .logo-footer{
-    width: 100px;
-  }
-
-  p{
-    color: #6b708d;
-    font-size: 17px;
-  }
-
-  a{
-    font-size: 17px;
-    margin-left: 50px;
-    text-decoration: none;
-    color: #6b708d;
-  }
-
-  .footer-links{
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-  }
+/* Project page CSS */
+.project-image{
+  width: 500px;
 }
