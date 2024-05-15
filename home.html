@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script defer src="./js/home.js"></script>
     <title>Circle</title>
   </head>
   <body>
@@ -81,37 +82,43 @@
         />
       </section>
       <section class="project-section">
-        <h3>Recent Projects</h3>
+        <h3 class="project-title">Recent Projects</h3>
         <div class="project-cards">
-          <article>
+          <article class="article-container">
             <img
               class="img-card"
               src="./assets/projects-section/projects-section/1.jpg"
               alt=""
             />
-            <h3>Simplify</h3>
-            <p>UI Design & App Development</p>
-            <p>Learn More</p>
+            <div class="info-project">
+              <h4>Simpaslify</h4>
+              <p>UI Design & App Development</p>
+              <a href="#">Learn More</a>
+            </div>
           </article>
-          <article>
+          <article class="article-container">
             <img
               class="img-card"
               src="./assets/projects-section/projects-section/2.jpg"
               alt=""
             />
-            <h3>Dashcoin</h3>
-            <p>Web Development</p>
-            <p>Learn More</p>
+            <div class="info-project">
+              <h4>Dashcoin</h4>
+              <p>Web Development</p>
+              <a href="#">Learn More</a>
+            </div>
           </article>
-          <article>
+          <article class="article-container">
             <img
               class="img-card"
               src="./assets/projects-section/projects-section/3.jpg"
               alt=""
             />
-            <h3>Vectorify</h3>
-            <p>User Experience Design</p>
-            <p>Learn More</p>
+            <div class="info-project">
+              <h4>Vectorify</h4>
+              <p>User Experience Design</p>
+              <a href="#">Learn More</a>
+            </div>
           </article>
         </div>
       </section>
@@ -205,7 +212,7 @@
       <section class="contact-section">
         <h2>Do you have any questions?</h2>
         <p>Let us help you!</p>
-        <form action="">
+        <form id="subscribe" action="">
           <input
             class="input-mail"
             type="text"

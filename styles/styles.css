@@ -129,6 +129,7 @@ ul {
     .title {
       padding-top: 50px;
       max-width: 600px;
+      color: #292e47;
     }
 
     p {
@@ -190,6 +191,11 @@ ul {
 .project-section {
   margin: 0px 350px;
 
+  .project-title{
+    padding-bottom: 40px;
+    color: #292e47;
+  }
+
   .project-cards {
     display: flex;
     justify-content: space-between;
@@ -198,9 +204,35 @@ ul {
     margin: 0 auto;
 
     .img-card {
-      width: 300px;
+      width: 350px;
       height: 250px;
     }
+  }
+
+  .article-container {
+    background-color: white;
+  }
+
+  .info-project{
+    padding: 0px 0px 30px 20px
+  }
+
+  h4 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #292e47;
+  }
+
+  p {
+    font-size: 18px;
+    color: #292e47;
+    padding-bottom: 30px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #072ac8;
+    font-weight: 500;
   }
 }
 
@@ -467,11 +499,11 @@ ul {
       background-color: #dcdfed;
     }
 
-    .phone-div{
+    .phone-div {
       width: 50%;
     }
 
-    .phone-div input{
+    .phone-div input {
       width: 100%;
       font-family: Roboto;
       font-size: 16px;
